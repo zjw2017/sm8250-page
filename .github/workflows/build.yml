@@ -30,7 +30,6 @@ jobs:
           sed -i "s/CMITIME/$CMITIME/g" ./index.html
 
       - name: sync
-      - name: Git Auto Commit
         uses: stefanzweifel/git-auto-commit-action@v4.14.1
         with:
           file_pattern: index.html
