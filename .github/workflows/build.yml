@@ -1,9 +1,6 @@
 name: build
 on:
   push:
-    branches:    
-      - main
-
   workflow_dispatch:
 
 jobs:
@@ -34,7 +31,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4.14.1
         with:
           file_pattern: index.html
-          branch: page
 
       - name: 删除工作流运行
         uses: Mattraks/delete-workflow-runs@v2
