@@ -20,7 +20,7 @@ jobs:
       - name: updage page
         run: |
           cp -rf 0.html ./index.html
-          chmod 777 $GITHUB_WORKSPACE"/device/*
+          chmod 777 "$GITHUB_WORKSPACE"/device/*
           source "$GITHUB_WORKSPACE"/device/UMI.ini
           source "$GITHUB_WORKSPACE"/device/CMI.ini
           sed -i "s/UMIPKG/$UMIPKG/g" ./index.html
