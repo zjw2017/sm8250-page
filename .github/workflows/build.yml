@@ -18,15 +18,15 @@ jobs:
         run: |
           cp -rf 0.html ./index.html
           source device/*.ini
-          sed -i "s/UMIPKG/$UMIPKG/g" ./index.html
-          sed -i "s/UMIMD5/$UMIMD5/g" ./index.html
-          sed -i "s/UMITIME/$UMITIME/g" ./index.html
-          sed -i "s/CMIPKG/$CMIPKG/g" ./index.html
-          sed -i "s/CMIMD5/$CMIMD5/g" ./index.html
-          sed -i "s/CMITIME/$CMITIME/g" ./index.html
-          sed -i "s/LMIPKG/$LMIPKG/g" ./index.html
-          sed -i "s/LMIMD5/$LMIMD5/g" ./index.html
-          sed -i "s/LMITIME/$LMITIME/g" ./index.html
+          sed -i "s/umiPKG/$umiPKG/g" ./index.html
+          sed -i "s/umiMD5/$umiMD5/g" ./index.html
+          sed -i "s/umiTIME/$umiTIME/g" ./index.html
+          sed -i "s/cmiPKG/$cmiPKG/g" ./index.html
+          sed -i "s/cmiMD5/$cmiMD5/g" ./index.html
+          sed -i "s/cmiTIME/$cmiTIME/g" ./index.html
+          sed -i "s/lmiPKG/$lmiPKG/g" ./index.html
+          sed -i "s/lmiMD5/$lmiMD5/g" ./index.html
+          sed -i "s/lmiTIME/$lmiTIME/g" ./index.html
       - name: sync
         uses: stefanzweifel/git-auto-commit-action@v4.14.1
         with:
