@@ -17,7 +17,7 @@ jobs:
       - name: updage page
         run: |
           cp -rf 0.html ./index.html
-          for i in lmi
+          for i in lmi umi cmi
           do
             source device/$i.ini
           done
