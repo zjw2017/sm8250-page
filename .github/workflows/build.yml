@@ -17,7 +17,10 @@ jobs:
       - name: updage page
         run: |
           cp -rf 0.html ./index.html
-          source device/*.ini
+          for i in lmi
+          do
+            source device/$i.ini
+          done
           sed -i "s/umiPKG/$umiPKG/g" ./index.html
           sed -i "s/umiMD5/$umiMD5/g" ./index.html
           sed -i "s/umiTIME/$umiTIME/g" ./index.html
