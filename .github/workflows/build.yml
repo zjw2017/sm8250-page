@@ -20,16 +20,23 @@ jobs:
           for i in lmi umi cmi
           do
             source device/$i.ini
-            sed -i "s/"$i"PKG/$umiPKG/g" ./index.html
-            sed -i "s/"$i"MD5/$umiMD5/g" ./index.html
-            sed -i "s/"$i"TIME/$umiTIME/g" ./index.html
-            sed -i "s/"$i"URL/$umiURL/g" ./index.html
           done
+          sed -i "s/umiPKG/$umiPKG/g" ./index.html
+          sed -i "s/umiMD5/$umiMD5/g" ./index.html
+          sed -i "s/umiTIME/$umiTIME/g" ./index.html
+          sed -i "s/umiURL/$umiURL/g" ./index.html
+          sed -i "s/cmiPKG/$cmiPKG/g" ./index.html
+          sed -i "s/cmiMD5/$cmiMD5/g" ./index.html
+          sed -i "s/cmiTIME/$cmiTIME/g" ./index.html
+          sed -i "s/cmiURL/$cmiURL/g" ./index.html
+          sed -i "s/lmiPKG/$lmiPKG/g" ./index.html
+          sed -i "s/lmiMD5/$lmiMD5/g" ./index.html
+          sed -i "s/lmiTIME/$lmiTIME/g" ./index.html
+          sed -i "s/lmiURL/$lmiURL/g" ./index.html
       - name: sync
         uses: stefanzweifel/git-auto-commit-action@v4.14.1
         with:
           file_pattern: index.html
-
       - name: 删除工作流运行
         uses: Mattraks/delete-workflow-runs@v2
         with:
