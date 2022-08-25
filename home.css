@@ -408,11 +408,13 @@
 }
 .home-text {
   font-size: 5rem;
+  align-self: center;
   text-align: center;
 }
 .home-text01 {
   font-size: 20px;
   max-width: var(--dl-size-size-maxwidth);
+  align-self: center;
   margin-top: var(--dl-space-space-twounits);
   text-align: center;
   margin-bottom: var(--dl-space-space-twounits);
@@ -645,7 +647,7 @@
 }
 @media(max-width: 550px) {
   .home-banner {
-    width: auto;
+    width: 100%;
   }
   .home-text {
     font-size: 40px;
@@ -661,5 +663,7 @@
   }
   .home-text05 {
     width: 360px;
+    padding: var(--dl-space-space-unit);
+    font-size: 14px;
   }
 }
