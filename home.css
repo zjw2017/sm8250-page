@@ -434,7 +434,7 @@
   max-width: var(--dl-size-size-maxwidth);
   align-self: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .home-container1 {
   display: flex;
