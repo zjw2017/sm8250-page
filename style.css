@@ -94,9 +94,7 @@
 }
 
 
-
-
-@media(max-width: 479px) {
+@media(max-width: 650px) {
   .buttom1 {
     color: var(--dl-color-gray-white);
     padding: var(--dl-space-space-halfunit);
