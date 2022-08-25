@@ -314,7 +314,7 @@
 }
 @media(max-width: 550px) {
   .blog-post-card11-blog-post-card {
-    width: 384px;
+    width: 360px;
   }
   .blog-post-card11-image {
     width: 166px;
@@ -385,8 +385,8 @@
 }
 @media(max-width: 550px) {
   .gallery-card1-image {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
   }
 }
 
@@ -645,15 +645,22 @@
   }
 }
 @media(max-width: 550px) {
+  .home-banner {
+    width: auto;
+  }
+  .home-text {
+    font-size: 40px;
+  }
   .home-text01 {
     width: 100%;
-    font-size: 14px;
+    font-size: 10px;
   }
   .home-gallery {
-    width: 480px;
+    width: 360px;
     padding: 0px;
+    align-self: center;
   }
   .home-text05 {
-    width: 480px;
+    width: 360px;
   }
 }
