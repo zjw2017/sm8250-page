@@ -5,7 +5,9 @@
   max-width: var(--dl-size-size-maxwidth);
   box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
   transition: 0.3s;
+  align-items: center;
   flex-direction: column;
+  justify-content: center;
   background-color: var(--dl-color-gray-white);
 }
 .blog-post-card11-blog-post-card:hover {
@@ -230,7 +232,7 @@
 @media(max-width: 650px) {
   .blog-post-card11-blog-post-card {
     width: auto;
-    background-color: #f5f5f5;
+    background-color: var(--dl-color-gray-white);
   }
   .blog-post-card11-image {
     width: 250px;
