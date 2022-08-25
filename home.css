@@ -5,10 +5,8 @@
   max-width: var(--dl-size-size-maxwidth);
   box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
   transition: 0.3s;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
-  background-color: #fefefe;
+  background-color: var(--dl-color-gray-white);
 }
 .blog-post-card11-blog-post-card:hover {
   transform: scale(1.02);
@@ -108,7 +106,6 @@
   }
   .blog-post-card11-container {
     padding: var(--dl-space-space-unit);
-    align-self: center;
   }
   .blog-post-card11-text {
     font-size: 24px;
