@@ -35,13 +35,13 @@
   --dl-space-space-oneandhalfunits: 24px;
 }
 .button {
-  color: var(--dl-color-gray-black);
+  color: var(--dl-color-gray-white);
   display: inline-block;
   padding: 0.5rem 1rem;
   border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
+  border-width: 0px;
+  border-radius: 6px;
+  background-color: #E7651A;
 }
 .input {
   color: var(--dl-color-gray-black);
@@ -75,6 +75,7 @@
 .teleport-show {
   display: flex !important;
 }
+
 .content {
   font-size: 16px;
   font-family: Inter;
@@ -90,4 +91,19 @@
   line-height: 1.15;
   text-transform: none;
   text-decoration: none;
+}
+
+
+
+
+@media(max-width: 479px) {
+  .buttom1 {
+    color: var(--dl-color-gray-white);
+    padding: var(--dl-space-space-halfunit);
+    font-size: 14px;
+    line-height: auto;
+    border-width: 0px;
+    margin-right: var(--dl-space-space-twounits);
+    background-color: #E7651A;
+  }
 }
